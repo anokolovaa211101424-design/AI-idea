@@ -63,25 +63,48 @@ def main():
     
 main()
 ```
+##  Data sources and AI methods
+- **User data:** Questionnaires about skin type, allergies, lifestyle habits.  
+- **Product databases:** Open cosmetic ingredient databases (e.g., INCI lists).  
+- **Environmental data:** Climate conditions (humidity, temperature, UV index) via weather APIs.  
+- **AI methods:**  
+  - Classification models to detect skin type.  
+  - Recommendation systems to match products with user profiles.  
+  - NLP to analyze product reviews and extract sentiment.  
+  - Computer vision (future extension) to analyze skin photos.  
+  - Integration with external APIs (weather, product data) for richer evaluation.  
 
-
-## Data sources and AI methods
-Relevant player data can be gathered from https://www.rotowire.com/soccer/stats.php?UCL=1 
-Current market value data can be obtained from https://www.transfermarkt.com/
+---
 
 ## Challenges
+- AI can suggest suitable products, but it cannot guarantee how each individual’s skin will react.  
+- Skin conditions are influenced by hormones, stress, and lifestyle factors that may not be captured in data.  
+- Ingredient databases may be incomplete or inconsistent.  
+- Recommendations cannot replace professional dermatological advice.  
 
-The AI can predict which player is worth more than their market value but it cannot predict whether the player will actually reach its potential or whether it gets a season ending injury. Though injury proness can be included in the evaluation, a season ending injury can happen to any fit player. 
+---
 
-## What next?
+##  What next?
+- **Skin photo analysis:** Add computer vision to detect dryness, acne, or irritation directly from user images.  
+- **Dynamic recommendations:** Suggest different routines depending on season, climate, or daily habits.  
+- **Trend analysis:** Use NLP to track beauty trends and adapt recommendations accordingly.  
+- **Wellness integration:** Expand beyond skincare into nutrition, sleep, and fitness for holistic beauty advice.  
+- **Personalized categories:** Logistic regression to classify users into categories (basic care, advanced care, sensitive skin, premium care).  
+- **Technical requirements:** Access APIs for weather, product ingredient data, and user health trackers.  
 
-* Determine the likelihood of a player injury in each next game based on player load, weather, field quality, average distance per game, etc. 
-* Determine best substitutes for a given game depending on the score, player recent performance (ie how is a player trending), weather, etc. Add climate to player evaluation: some players perform better in cold or wet weather than others. Some players perform better in extreme heat.
-* Determine whether investments into own youth players is worth the cost of the investment. Prediction based on player progress vs money spent. 
-* Player qualification system using logistic regression; player categories can be: prospect, value player, star, sale potential
+---
 
-Required capabilities: Accessing an api to fetch weather data, player data, market data. Developing a neural network to map players to categories. 
+##  Acknowledgments
+- **Data inspiration:** Open cosmetic ingredient databases, dermatology research papers.  
+- **Libraries:** Python (pandas, scikit‑learn).  
+- **Sources:** Beauty blogs, skincare forums, product review platforms.  
+- **Community:** Building AI course project gallery and GitHub community projects.  
 
-## Acknowledgments
+## 📎 Additional resources
+- [INCI Decoder](https://incidecoder.com/) — база даних косметичних інгредієнтів.  
+- [CosDNA](https://www.cosdna.com/) — аналіз складу продуктів та відгуки користувачів.  
+- [OpenWeather API](https://openweathermap.org/api) — дані про кліматичні умови для персоналізованих рекомендацій.  
+- [PubMed Dermatology](https://pubmed.ncbi.nlm.nih.gov/) — наукові статті про догляд за шкірою.  
 
-* Football Fantasy League https://fantasy.premierleague.com/my-team
+---
+
